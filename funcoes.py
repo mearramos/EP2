@@ -25,3 +25,12 @@ def faz_jogada(tabuleiro, linha, coluna):
     elif tabuleiro[linha][coluna] == 1:
         tabuleiro[linha][coluna] = "X"
     return tabuleiro
+
+def posiciona_frota(frota):
+    tabuleiro_novo = [[0 for i in range(10)] for i in range(10)]
+    for nome, posicoes in frota.items():
+        for posicao in posicoes:
+            for linha, coluna in posicao:
+                tabuleiro_novo[linha][coluna] = 1
+
+    return tabuleiro_novo
