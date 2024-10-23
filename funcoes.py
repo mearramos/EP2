@@ -34,3 +34,6 @@ def posiciona_frota(frota):
                 tabuleiro_novo[linha][coluna] = 1
 
     return tabuleiro_novo
+
+def afundados(frota):
+    
