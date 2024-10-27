@@ -38,10 +38,24 @@ def posiciona_frota(frota):
 def afundados(frota, tabuleiro):
     navios = 0
     for info, posicao in frota.items():
-        for posicoes in posicao:
+        for posicoes in posicao: 
             if all (tabuleiro[linha][coluna] == "X" for linha, coluna in posicoes):
                 navios += 1
     return navios
 
+def posicao_valida(frota, linha, coluna, orientacao, tamanho):
+    validacao = define_posicoes(linha, coluna, orientacao, tamanho)
+
+    for x, y in validacao:
+        if x < 0 or x > 9 or y < 0 or y > 9:
+            return False
+        
+    for posicoes in validacao:
+        for navios in frota.values():
+            for navio in navios:
+                for posicao in navio:   
+                    if posicoes == posicao:
+                        return False
+    return True
 
 

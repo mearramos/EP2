@@ -3,6 +3,5 @@ Para exercitar nossas habilidades com programação, vamos desenvolver o jogo Ba
 
 Ao longo do EP2, alguns sites me auxiliaram para o entendimento de outros métodos que eu poderia usar e não foram abordados anteriormente. Estarei colocando links aqui.
 
-Python all() Function: https://www.w3schools.com/python/ref_func_all.asp
+Python all() Function: https://www.w3schools.com/python/ref_func_all.asp;
 How to use the if not Python statement?: https://flexiple.com/python/if-not-python
-
